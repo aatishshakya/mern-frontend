@@ -1,6 +1,6 @@
 # MERN Stack Developer Technical Test
 
-## Backend API
+## Frontend Test
 
 ### Setup
 
@@ -8,6 +8,7 @@
 
    ```bash
    git clone git@github.com:aatishshakya/mern-frontend.git
+   cd mern-fornted
 
    ```
 
@@ -18,11 +19,17 @@
 
    ```
 
-3. Update the constants in env
-   API_URL = 'your-endpoint'
+3. Create a `.env` file in the root directory with the following contents:
 
-4. Start the server:
+   ```bash
+   MONGO_URI=your_mongo_db_connection_string
+   PORT= your port
+
+   ```
+
+4. Start the development server:
 
    ```bash
    npm start
+
    ```
