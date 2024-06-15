@@ -1,0 +1,39 @@
+// src/styles/EditUser.scss
+
+.edit-user {
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid $color-grey;
+      border-radius: 4px;
+    }
+
+    &__error {
+      color: $color-red;
+      font-size: 0.875rem;
+    }
+
+    &__button {
+      padding: 0.5rem;
+      background-color: $color-primary;
+      color: $color-white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+}

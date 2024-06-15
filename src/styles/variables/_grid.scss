@@ -1,0 +1,27 @@
+//Grid variables
+$grid-count: 12 !default;
+$grid-class: col !default;
+$gutter-width: 32px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $sm-device,
+  md: $md-device,
+  lg: $lg-device,
+  xl: $xl-device,
+  xxl: $xxl-device
+) !default;
+
+$container-max-widths: (
+  // Remove container max width for device other than laptop
+  // xs: 480px,
+  // sm: 576px,
+  md: 744px,
+  // lg: 992px,
+  xl: 1140px
+) !default;
+
+$grid-container: 'container';
+$grid-container-fluid: 'container-fluid';
+$row-name: 'row';
+$grid-type: flex; //type of grid (either 'float' or 'flex' only)

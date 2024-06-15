@@ -1,0 +1,155 @@
+// Base font size
+$base__header__line: 1.25 !default;
+$base__body__line: 1.5 !default;
+$base__font-size: 1rem !default;
+
+// Font weight variables
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Font Declaration
+$font-sans: var(--euclid), sans-serif;
+$font-primary: $font-sans;
+$font-code: var(--droid-sans-mono), 'Droid Sans Mono', monospace;
+
+//font-weight
+$fontWeight: (
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': bold,
+  'extrabold': 800,
+  'black': 900
+);
+
+$fontSize: (
+  'header': (
+    'h1': (
+      'font-size': rem(36),
+      'line-height': 54px,
+      'spacing': 0,
+      'font-weight': 600,
+      'responsive': (
+        'sm': (
+          'font-size': rem(24)
+        ),
+        'md': (
+          'font-size': rem(24)
+        )
+      )
+    ),
+    'h2': (
+      'font-size': rem(32),
+      'line-height': 40px,
+      'spacing': 0,
+      'font-weight': 600
+    ),
+    'h2main': (
+      'font-size': rem(24),
+      'line-height': 36px,
+      'spacing': 0,
+      'font-weight': 600,
+      'responsive': (
+        'sm': (
+          'font-size': rem(20)
+        ),
+        'md': (
+          'font-size': rem(20)
+        )
+      )
+    ),
+    'h3': (
+      'font-size': rem(22),
+      'line-height': 30px,
+      'spacing': 0,
+      'font-weight': 600
+    ),
+    'h3main': (
+      'font-size': rem(20),
+      'line-height': 30px,
+      'spacing': 0,
+      'font-weight': 400
+    ),
+    'h4': (
+      'font-size': rem(20),
+      'line-height': 28px,
+      'spacing': 0,
+      'font-weight': 500
+    ),
+    'h5': (
+      'font-size': rem(16),
+      'line-height': 24px,
+      'spacing': 0,
+      'font-weight': 500
+    ),
+    'large64': (
+      'font-size': rem(64),
+      'line-height': 72px,
+      'spacing': 0,
+      'font-weight': 700
+    ),
+    'large': (
+      'font-size': rem(144),
+      'line-height': 147px,
+      'spacing': 0,
+      'font-weight': 700
+    )
+  ),
+  'font': (
+    'article': (
+      'font-size': rem(18),
+      'line-height': 28px
+    ),
+    'body16': (
+      'font-size': rem(16),
+      'line-height': 26px
+    ),
+    'body18': (
+      'font-size': rem(18),
+      'line-height': 30px
+    ),
+    'body14': (
+      'font-size': rem(14),
+      'line-height': 20px
+    ),
+    'caption': (
+      'font-size': rem(14),
+      'line-height': 16px
+    ),
+    'tiny': (
+      'font-size': rem(12),
+      'line-height': 16px
+    )
+  )
+);
+
+$fontDecoration: (
+  'striked': line-through,
+  'underlined': underline,
+  'decoration-none': none
+);
+
+$fontCase: (
+  'uppercase': uppercase,
+  'lowercase': lowercase,
+  'capitalized': capitalize
+);
+
+$fontStyle: (
+  'normal': normal,
+  'italic': italic,
+  'oblique': oblique
+);
+
+$textAlignment: (
+  'center': center,
+  'left': left,
+  'right': right,
+  'justified': justify
+);

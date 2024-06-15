@@ -1,0 +1,123 @@
+// ==========================================================================
+// Config
+// Define variables, maps and fonts at this partial.
+// ==========================================================================
+
+//Enter your Web Address here for print media
+$domain-name: 'www.domain-name.com';
+
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+//Font Stacks
+$font-family-sans-fallback: 'Arial', sans-serif;
+$font-family-sans: var(--euclid), 'Euclid Circular A', 'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
+$font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+$font-family-monospace: var(--droid-sans-mono), 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono',
+  'Courier', monospace;
+$font-family--primary: $font-family-sans;
+$font-family--secondary: $font-family-sans;
+
+//Colors
+$white: #fff;
+$black: #000;
+$purple: #6501e5;
+// $light-blue: #009bde;
+$yellow: #ffe8d6;
+// $light-yellow: #ffe8d6;
+$config-light-green: #36d7b7;
+
+//Message Colors
+$error: lighten($red, 5%) !default;
+$success: $config-light-green !default;
+$edit: $yellow !default;
+
+//Breakpoints
+$sm-device: 576px;
+// -4px for md because of scrollbar in safari not included in viewport
+$md-device: 744px;
+$lg-device: 992px;
+$xl-device: 1200px;
+$xxl-device: 1400px;
+
+//UI Colors
+$ui-colors: (
+  default: $blue,
+  success: $success,
+  error: $error,
+  warning: $edit
+);
+
+//Color Palette
+$palettes: (
+  gray-shades: (
+    base: $gray,
+    dark: darken($gray, 20%),
+    light: lighten($gray, 20%)
+  ),
+  blue-shades: (
+    base: $blue,
+    dark: darken($blue, 20%),
+    light: lighten($blue, 20%)
+  )
+);
+
+//Font size variables
+$default-font-size: $base__font-size - 2px;
+$lg-font-size: $default-font-size + 2px;
+$small-font-size: 0.875rem;
+$tiny-font-size: 0.75rem;
+
+//Heading font size vairables
+$heading-line-height: 28px !default;
+$head1-font-size: 26px !default;
+$head2-font-size: 32px !default;
+$head3-font-size: 22px !default;
+
+//Color Usage
+$primary: $blue;
+$secondary: $purple;
+$accent-color: $gray;
+$shadow-color: rgba($black, 0.2);
+$border-color: #d3dce6;
+$color-text: transparentize(#25265e, 0);
+$color-link: $blue;
+// $yellow: #ffe8d6;
+$orange: #ff8b6c;
+
+//Path to Assets
+$path--rel: '../images';
+
+//Custom Overrides
+
+$gutter-width: 30px;
+
+$navbar-padding-y: 0.625rem;
+$navbar-padding-x: 0;
+
+$progress-bg: transparentize($color-text, 0.9);
+$progress-height: 6px;
+$progress-bar-bg: getColor('highlight.teal');
+$progress-border-radius: 20px;
+
+$breadcrumb-bg: $white;
+$breadcrumb-padding-x: 1.5rem;
+$pre-color: transparentize($white, 0.03);
+$code-font-size: 0.75em;
+
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+$custom-select-padding-y: 0.75rem;
+$custom-select-padding-x: 1rem;
+
+$alert-padding-x: 1rem;
+$alert-padding-y: 0.875rem;
+
+// $zindex-dropdown:                   1000 !default;
+// $zindex-sticky:                     1020 !default;
+// $zindex-fixed:                      1030 !default;
+// $zindex-modal-backdrop:             1040 !default;
+// $zindex-modal:                      1050 !default;
+// $zindex-popover:                    1060 !default;
+// $zindex-tooltip:                    1070 !default;

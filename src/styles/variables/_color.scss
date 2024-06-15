@@ -1,0 +1,241 @@
+// Default Color
+$white: #fff;
+$black: #000;
+$blue: #0556f3;
+$purple: #6501e5;
+$purple-dark: #4f03af;
+$red: #e34c4c;
+$green: #56bd5b;
+$dark-green: #42aa48;
+$darker-green: #3fa144;
+$apricot: #ffe8d6;
+$mandys-pink: #feccbf;
+$darkIndigo: #25265e;
+$purple-mid: #1c2130;
+$doubleDarkIndigo: #1b1c44;
+$lightIndigo: #a8a8bf;
+$gray: #d3dce6;
+$gray-light: #f9fafc;
+$gray-alt: #e8e8e8;
+$gray8: #eff2f7;
+$subtle-gray: #f5f8ff;
+$light-grey: #f1f5fd;
+$faint-grey: #f2f2f2;
+$dark-grey: #383b40;
+$light-dark: #1f2023;
+$rose-white: #fdf1eb;
+$cod-gray: #111111;
+$alice-blue: #f8faff;
+$rustic-red: #090340;
+$midnight-summer: #0f0345;
+$magic-whale: #150349;
+$pantone: #1b054d;
+$ral: #2d134e;
+$royal-purple: #32194e;
+$sunny-morning: #f6d365;
+$heliotrope: #fda085;
+$purple-heart: #18034b;
+$orange: #ff8b6c;
+$magneta: #140448;
+$onahau: #ffead1;
+$soft-red: #f77062;
+$soft-pink: #fe5196;
+$bright-violet: #9327fe;
+$soft-violet: #6501e5;
+$snow: #fafafa;
+$carousel-pink: #fcebec;
+$very-dark-orange: #4d2d00;
+$very-dark-blue: #1b1144;
+$pale-orange: #ffd29e;
+
+$light-yellow: #fff1d6;
+$light-green: #d9ffe5;
+$light-blue: #d1e7ff;
+$light-red: #ffd8da;
+$light-black: #00031e1a;
+$strong-blue: #0077b5;
+$dark-blue: #085b8c;
+$purple-grey: #f8faff;
+$old-lace: #fff5e7;
+
+$dark-mode-bg: #242b3c;
+
+// Application colors
+$primary: $blue;
+$secondary: $purple;
+$tertiary: $darkIndigo;
+$success: $green;
+$alert: $red;
+$color-text: $darkIndigo;
+$color-text-87: rgba($darkIndigo, 0.87);
+$color-text-67: rgba($darkIndigo, 0.67);
+$color-text-dark: $doubleDarkIndigo;
+$color-text-light: $lightIndigo;
+$color-link: $primary;
+$dark-base: rgba(20, 28, 58, 0.9);
+$light-base: #fbfbfb;
+$code-base: #f5f5f5;
+$scroll-bg: lightgrey;
+$faint-base: $light-grey;
+$btn-gray: $gray8;
+$pdf-wrapper-gray: #4f4f4f;
+$linkedin-background: #ccedff;
+$linkedin-color: #1da1f2;
+$certificate-wrapper-hover: #0444c1;
+$video-wrapper-orange: #fff1e7;
+$code-grey: $dark-grey;
+$courseHeroBg: $light-blue;
+$betaCourseHeroBg: $onahau;
+$dropdown-bg: $alice-blue;
+$table-bg: $alice-blue;
+$landing-alternate-bg: $old-lace;
+$dark-violet: #4900a6;
+$peppermint: #ddf2de;
+$pink-lady: #fff1d6;
+$cream-can: #ffcd6d;
+$cornflowerblue: #00a3ff;
+$venice-blue: #085b8c;
+$woodsmoke: #171516;
+$magic-mint: #a3f6c1;
+$very-pale-blue: #d1e7ff;
+$lime-green: #d9ffe5;
+$very-pale-red: #ffd8da;
+$pale-cyan: #d6f5ff;
+
+// Custom Colors for Sale
+$india-blue: #01d6d0;
+$cod-gray: #111111;
+$sweet-corn: #f093fb;
+$ripe-malinka: #f5576c;
+$vulcan: #383b40;
+$teal: #00dbcd;
+$iris-blue: #00bbe1;
+$ebony: #2d2f34;
+$nero: #1d1d1d;
+$deep-sky-blue: #00a3ff;
+$saffron: #ffc33d;
+$half-dutch-white: #f9efd2;
+$solitude: #e3ebfe;
+$dodger-blue: #0572f3;
+$peach-orange: #ffc48d;
+$night-rider: #2e2e2e;
+$mid-night-express: #1c2130;
+$arc-light: #cdddfd;
+$gray-85: #d9d9d9;
+$cyber-monday-salacia: #120347;
+$cyber-monday-blue: #a0fcfe;
+$mandy-red: #e34c4c;
+$cornflower-blue: #72a1fc;
+$light-coral: #fe8686;
+$offer-card-red: #370909;
+$teal-dark: #05171c;
+$void: #05171d;
+$phthalo-blue: #000f13;
+$tag-color: $saffron;
+$very-soft-orange: #efd5ad;
+$dark-orange: #f79522;
+$link-hover: darken($primary, 20%);
+$color-link-hover: $link-hover;
+
+// black friday sale
+$black-friday-modal-wrapper: $vulcan;
+$black-friday-modal-title: rgba(
+  $color: $white,
+  $alpha: 0.87
+);
+$black-friday-modal-text: rgba(
+  $color: $white,
+  $alpha: 0.67
+);
+
+// Diwali sale
+$diwali-modal-wrapper: $white;
+$diwali-modal-title: $darkIndigo;
+$diwali-modal-text: $darkIndigo;
+
+$christmas-yellow1: #b2782a;
+$christmas-yellow2: #b77f2e;
+$christmas-yellow3: #c49239;
+$christmas-yellow4: #dab14c;
+$christmas-yellow5: #f4d662;
+$christmas-yellow6: #f4de8b;
+
+//couldn't find a proper name for it.
+$pinkish-purple: #b580f9;
+
+//Custom Colors
+$border-gray: #ffffff33;
+$light-blue-v2: #eafafd;
+$light-white: rgba(255, 255, 255, 0.2);
+$light-white-2: rgba(255, 255, 255, 0.67);
+$compiler-dark-function: #affffa;
+
+//Color Palette
+$colorMap: (
+  'primary': (
+    'dark': darken($primary, 20%),
+    'base': $primary,
+    'light': $arc-light,
+    '60': rgba($primary, 0.6),
+    '40': rgba($primary, 0.4),
+    '20': rgba($primary, 0.2)
+  ),
+  'secondary': (
+    'dark': $purple-dark,
+    'base': $secondary,
+    '60': rgba($secondary, 0.6),
+    '40': rgba($secondary, 0.4),
+    '20': rgba($secondary, 0.2),
+    '10': rgba($secondary, 0.1)
+  ),
+  'success': (
+    'dark': darken($green, 20%),
+    'base': $green,
+    '60': rgba($green, 0.6),
+    '40': rgba($green, 0.4),
+    '20': rgba($green, 0.2),
+    '10': rgba($green, 0.1)
+  ),
+  'danger': (
+    'dark': darken($alert, 20%),
+    'base': $alert,
+    '60': rgba($alert, 0.6),
+    '20': rgba($alert, 0.2)
+  ),
+  'warning': (
+    'base': $dark-orange,
+    'dark': #541717
+  ),
+  'grey': (
+    'borderGrayAlt': $gray-alt,
+    'borderGray': $gray,
+    'borderRed': $red,
+    'borderBlue': $primary,
+    'hoverAccentBlue': rgba($primary, 0.2),
+    'mainBg': $code-base
+  ),
+  'text': (
+    'main': $color-text,
+    'paragraph': rgba($color-text, 0.87),
+    'caption': rgba($color-text, 0.67),
+    'light': $color-text-light
+  ),
+  'white': (
+    'main': $white,
+    'text': transparentize($white, 0.13)
+  ),
+  'highlight': (
+    'orange': $orange,
+    'teal': $teal
+  )
+);
+
+// modal color
+$modal-backdrop-color: rgba($black, 0.6);
+
+// python-hub
+$python-hub-hero-bg: #eef7ff;
+$btn-hover-blue: #0047d1;
+$light-beige: #fff6ee;
+$purplish-gray: #6d6786;
+$royal-blue: #34718e;
