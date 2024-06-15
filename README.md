@@ -4,13 +4,25 @@
 
 ### Setup
 
-1. Install dependencies:
+1. Clone the repository:
+
+   ```bash
+   git clone git@github.com:aatishshakya/mern-frontend.git
+
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
 
-2. Start the server:
+   ```
 
-    ```bash
-    npm start
+3. Update the constants in env
+   API_URL = 'your-endpoint'
 
+4. Start the server:
+
+   ```bash
+   npm start
+   ```

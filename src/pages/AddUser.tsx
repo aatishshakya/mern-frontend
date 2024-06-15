@@ -1,11 +1,14 @@
 // src/pages/AddUser.tsx
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { createUser } from "../services/userService";
 import { User } from "../interfaces/User";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { toast } from "react-toastify";
+import "../App.css"; // Make sure to import the CSS file where additional styles are defined
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -26,15 +29,19 @@ const AddUser: React.FC = () => {
     formState: { errors },
   } = useForm<User>({ resolver: yupResolver(schema) });
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit: SubmitHandler<User> = (data) => {
-    createUser(data)
-      .then(() => {
-        navigate("/");
-      })
-      .catch((error) => {
-        console.error("There was an error creating the user!", error);
-      });
+  const onSubmit: SubmitHandler<User> = async (data) => {
+    setLoading(true);
+    try {
+      await createUser(data);
+      navigate("/");
+    } catch (error) {
+      console.error("There was an error creating the user!", error);
+      toast.error("There was an error creating the user!");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -48,6 +55,7 @@ const AddUser: React.FC = () => {
               {...register("name")}
               placeholder="Name"
               className="add-user__form__input"
+              disabled={loading}
             />
             <p className="add-user__form__error">{errors.name?.message}</p>
           </div>
@@ -57,6 +65,7 @@ const AddUser: React.FC = () => {
               {...register("email")}
               placeholder="Email"
               className="add-user__form__input"
+              disabled={loading}
             />
             <p className="add-user__form__error">{errors.email?.message}</p>
           </div>
@@ -66,11 +75,23 @@ const AddUser: React.FC = () => {
               {...register("password")}
               placeholder="Password"
               className="add-user__form__input"
+              disabled={loading}
             />
             <p className="add-user__form__error">{errors.password?.message}</p>
           </div>
-          <button type="submit" className="add-user__form__button">
-            Add User
+          <button
+            type="submit"
+            className="add-user__form__button"
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                Adding...
+                <AiOutlineLoading3Quarters className="loader-icon" />
+              </>
+            ) : (
+              "Add User"
+            )}
           </button>
         </form>
       </div>

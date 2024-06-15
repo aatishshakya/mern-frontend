@@ -407,3 +407,26 @@ pre {
   -webkit-text-select: none; // IOS Safari
   -webkit-user-select: none; // Safari
 }
+
+/* src/App.css or any appropriate CSS file */
+.loader-icon {
+  margin-left: 8px;
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as needed */
+}
