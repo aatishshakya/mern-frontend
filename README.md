@@ -22,8 +22,7 @@
 3. Create a `.env` file in the root directory with the following contents:
 
    ```bash
-   MONGO_URI=your_mongo_db_connection_string
-   PORT= your port
+   API_URL=your-backend-api-endpoint
 
    ```
 
