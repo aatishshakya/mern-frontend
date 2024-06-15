@@ -2,7 +2,8 @@
 import axios from "axios";
 import { User } from "../interfaces/User";
 
-const API_URL = process.env.API_URL || "http://localhost:5000/api/users";
+const API_URL =
+  process.env.API_URL || "https://mern-backend-test-tau.vercel.app/api/users";
 
 export const getUsers = () => axios.get<User[]>(API_URL);
 export const getUserById = (id: string) => axios.get<User>(`${API_URL}/${id}`);
