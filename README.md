@@ -1,8 +1,8 @@
 # MERN Stack Developer Technical Test
 
-## Frontend Test
+## MERN-TS Frontend
 
-### Setup
+### Setup Instruction
 
 1. Clone the repository:
 
@@ -27,7 +27,7 @@
 
    ```
 
-4. Start the development server:
+4. Start the development project:
 
    ```bash
    npm run start
