@@ -30,6 +30,6 @@
 4. Start the development server:
 
    ```bash
-   npm start
+   npm run start
 
    ```
